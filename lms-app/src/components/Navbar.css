@@ -1,0 +1,78 @@
+/* Base styles for the navigation bar */
+nav {
+  background-color: #333;
+  color: #fff;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  /* Add any specific styles for list items here if needed */
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Styles for smaller screens (mobile) */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+
+  .collapse {
+    display: none;
+    transition: max-height 0.3s ease-out;
+    overflow: hidden;
+  }
+
+  .collapse.show {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 1;
+    max-height: 500px; /* Adjust based on content size */
+  }
+
+  .collapse.show a {
+    padding: 10px 0;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-collapse {
+    transition: max-height 0.3s ease-out;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .navbar-collapse.show {
+    max-height: 500px; /* Adjust based on content size */
+  }
+}

@@ -1,0 +1,53 @@
+.language {
+  width: 50px;
+}
+
+.heading {
+  font-size: 20px;
+  color: blue;
+}
+
+#source {
+  width: 100% !important;
+  margin-top: auto;
+  padding: 20px;
+  background: beige;
+  height: 50vh;
+  font-size: 20px;
+  resize: vertical;
+}
+
+#input {
+  background: beige;
+  margin-left: 1px;
+  margin-bottom: 1px;
+  padding: auto;
+  width: 100%; /* Adjusted width for mobile */
+  height: 17vh;
+  resize: vertical;
+  font-size: 20px;
+}
+
+#output {
+  width: 100% !important;
+  margin: auto;
+  background: #cccccc52;
+  height: 50vh;
+  font-size: 18px;
+  resize: vertical;
+  float: right;
+}
+
+@media screen and (min-width: 768px) {
+  /* Apply these styles only for screens wider than 768px (tablets and desktops) */
+  #input {
+      width: 48.6%; /* Reset width for larger screens */
+  }
+
+  #output {
+      width: 48.6%; /* Reset width for larger screens */
+  }
+  #source {
+    width: 48.6%;
+  }
+}

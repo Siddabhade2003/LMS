@@ -1,0 +1,155 @@
+/* src/components/HomePage.css */
+
+/* Header */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between; /* Align children to the start and end of the container */
+  align-items: center; /* Center vertically */
+}
+
+.logo {
+  margin: 0;
+  font-size: 24px;
+}
+
+.navbar {
+  /* Removed float: right; */
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Use flexbox */
+}
+
+.nav-links li {
+  /* display: inline; Remove inline */
+  margin-right: 20px;
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.bg {
+  position: relative;
+}
+
+.bg img {
+  position: absolute;
+  top: 0;
+  right: 0; /* Align the image to the right side */
+  width: 50%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  z-index: -1; /* Ensure the image is behind other content */
+}
+
+/* Text Content */
+.text-content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Adjust the font size and spacing for better readability on mobile screens */
+.text-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px; /* Increase spacing below the heading */
+}
+
+.text-content p {
+  font-size: 1rem;
+  margin-bottom: 30px; /* Increase spacing below paragraphs */
+}
+
+.home-container {
+  padding: 20px;
+}
+
+.testimonial-img {
+  max-width: 150px; /* Adjust the size as needed */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonial:nth-child(even) .testimonial-img {
+  float: right;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+.testimonial:nth-child(odd) .testimonial-img {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+/* Adjust layout for smaller screens */
+@media (max-width: 768px) {
+  .text-content {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .text-content h2 {
+    font-size: 1.5rem; /* Reduce heading font size for smaller screens */
+    margin-bottom: 15px; /* Reduce spacing below the heading */
+  }
+
+  .text-content p {
+    font-size: 0.9rem; /* Reduce paragraph font size for smaller screens */
+    margin-bottom: 20px; /* Keep spacing below paragraphs consistent */
+  }
+}
+
+/* Adjust layout for very small screens (440px) */
+@media (max-width: 440px) {
+  .header {
+    flex-direction: column; /* Stack header elements vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .nav-links {
+    flex-direction: column; /* Stack navigation links vertically */
+    align-items: flex-start;
+  }
+
+  .bg img {
+    position: static; /* Make the image part of the normal document flow */
+    width: 100%; /* Ensure image takes full width */
+    height: auto;
+    margin-top: 20px; /* Add some space between text content and image */
+  }
+
+  .text-content {
+    padding: 10px; /* Adjust padding */
+    text-align: center;
+  }
+
+  .text-content h2 {
+    font-size: 1.2rem; /* Adjust font size */
+    margin-bottom: 10px; /* Adjust spacing */
+  }
+
+  .text-content p {
+    font-size: 0.8rem; /* Adjust font size */
+    margin-bottom: 15px; /* Adjust spacing */
+  }
+}
+.footer {
+  background-color: #007bff; /* Use the same background color as the navbar */
+  color: black; /* Text color */
+  padding: 20px 0; /* Padding similar to the navbar */
+  text-align: center; /* Align text to the center */
+}

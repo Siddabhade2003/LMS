@@ -1,0 +1,27 @@
+/* DarkTheme.css */
+:root {
+    /* Define dark mode colors */
+    --primary-color: #1a1a1a;
+    --secondary-color: #262626;
+    --text-color: #ffffff;
+  }
+  
+  /* Apply dark mode styles */
+  .dark-mode {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+  }
+  
+  /* Example styles for specific components in dark mode */
+  .dark-mode .header {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+  }
+  
+  .dark-mode .footer {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+  }
+  
+  /* You can add more specific styles for different components as needed */
+  

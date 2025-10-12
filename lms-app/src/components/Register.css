@@ -1,0 +1,34 @@
+/* Login.css */
+
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .card {
+    animation: fadeInDown 0.5s ease-out;
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font to the entire form */
+  }
+  
+  .card-title {
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font to the title */
+  }
+  
+  .form-label {
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font to the labels */
+  }
+  
+  .form-control {
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font to the input fields */
+  }
+  
+  .btn-primary {
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font to the buttons */
+  }
+  
