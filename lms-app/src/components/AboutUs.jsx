@@ -25,7 +25,7 @@ function AboutUs() {
           <div className="content" style={{ ...contentStyle, animation: 'fadeInLeft 1s ease-in' }}>
             <h3 style={{ fontWeight: 'bold', color: 'blue', animation: 'fadeInLeft 1s ease-in' }}>Build your Tech Career for a better life with our practical courses</h3>
             <p style={{ fontWeight: 'bold', color: 'blueviolet', animation: 'fadeInLeft 1s ease-in' }}>Our mission is to empower individuals with the knowledge and skills they need to succeed in the world of programming. We believe that coding is not just a technical skill but a gateway to creativity, problem-solving, and innovation.</p>
-            <a href="#"><button style={{ ...buttonStyle, animation: 'fadeInUp 1s ease-in' }}>Learn more</button></a>
+            <button style={{ ...buttonStyle, animation: 'fadeInUp 1s ease-in' }}>Learn more</button>
           </div>
           <div className="image" style={{ ...imageStyle, animation: 'zoomIn 1s ease-in' }}>
             <img src="aboutus.jpg" alt="aboutus" style={{ width: '100%', height: 'auto' }} />

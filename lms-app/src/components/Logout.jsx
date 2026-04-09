@@ -15,9 +15,12 @@ const Logout = ({ setIsAuthenticated }) => {
   };
 
   return (
-    <button className="btn btn-link nav-link" onClick={handleLogout}>
-      Logout
-    </button>
+    <>
+      <button className="btn btn-link nav-link" onClick={handleLogout}>
+        Logout
+      </button>
+      <ToastContainer />
+    </>
   );
 };
 
